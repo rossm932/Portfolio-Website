@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" >
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         ul { 
             list-style: none; 
             display:grid;
             grid-template-columns: auto auto auto;
             padding: 12px;
-
         }
         li {
             text-align: center;
@@ -18,60 +19,53 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>ABC Shoe's</h1>
-    <ul>
-        <li>
-            <strong>Nike Air Max 95</strong>
-            <a href="productDetails.html"></a>
-            <a href="">Add to cart</a>
-            <br>
-            <img src="https://www.kickgame.co.uk/cdn/shop/products/nike-air-max-95-og-neon-2020-ct1689-001_1.png?v=1659101302" alt="Nike Air Max" width="200">
-            <ul>
-                <li>Price: $150</li>
-                <li>Size: Available in sizes 6-12</li>
-                <li>Color: Neon, Black</li>
-                <li>Features: Lightweight, breathable material</li>
-            </ul>
-        </li>
-        <li>
-            <strong>Dior B2O</strong>
-            <a href="">Add to cart</a>
-            <br>
-            <img src="https://www.crepslocker.com/cdn/shop/files/dior-b30-mesh-deep-green-black-trainer-3sn279zrd_h664-side.webp?v=1703262311" alt="Dior-B20" width="200">
-            <ul>
-                <li>Price: $899</li>
-                <li>Size: Available in sizes 5-13</li>
-                <li>Colors: Grey, Blue, Green</li>
-                <li>Features: Energy-returning cushioning</li>
-            </ul>
-        </li>
-        <li>
-            <strong>ON Running Trainers</strong>
-            <a href="">Add to cart</a>
-            <br>
-            <img src="https://i8.amplience.net/i/jpl/sz_686903_a?qlt=92&w=600&h=464&v=1&fmt=auto" alt="ON-Trainers" width="200">
-            <ul>
-                <li>Price: $130</li>
-                <li>Size: Available in sizes 7-11</li>
-                <li>Color: Black, Grey</li>
-                <li>Features: Designed for long-distance runs</li>
-            </ul>
-        </li>
-        <li>
-            <strong>ON Running Trainers</strong>
-            <a href="">Add to cart</a>
-            <br>
-            <img src="https://i8.amplience.net/i/jpl/sz_686903_a?qlt=92&w=600&h=464&v=1&fmt=auto" alt="ON-Trainers" width="200">
-            <ul>
-                <li>Price: $130</li>
-                <li>Size: Available in sizes 7-11</li>
-                <li>Color: Black, Grey</li>
-                <li>Features: Designed for long-distance runs</li>
-            </ul>
-        </li>
-    </ul>
-</body>
-</html>
-    
+    <nav class="sidebar">
+        <img src="" style="width:100%">
+        <a href="index.html" class="sidebar-item sidebar-button">
+            <i></i>
+            <p>HOME</p>
+        </a>
+        <a href="about.html" class="sidebar-item sidebar-button">
+            <i></i>
+            <p>ABOUT</p>
+        </a>
+        <a href="work.html" class="sidebar-item sidebar-button">
+            <i></i>
+            <p>WORK</p>
+        </a>
+        <a href="#portfolio" class="sidebar-item sidebar-button">
+            <i></i>
+            <p>PORTFOLIO</p>
+        </a>
+        <a href="#contact.html" class="sidebar-item sidebar-button">
+            <i class="icon icon-envelope"></i>
+            <p>CONTACT</p>
+        </a>
+    </nav>
+    <h1 class="workexp">Work Experience</h1>
+    <div class="worktabs" class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+            <div class="col-md-4">
+                <img src="https://media.licdn.com/dms/image/v2/D4E0BAQGAKvohXbCP5g/company-logo_200_200/company-logo_200_200/0/1719827046036/experis_uk_logo?e=2147483647&v=beta&t=mPlyYgaDw4QuW4cZaNewOMD4ui2bYqn_2z7nk5ePoUg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">Software Developer @ Experis/OpenText</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-muted">December 2024 - Present</small></p>
+                    <div class="card-body">
+                        <h5 class="card-title">Software Developer @ NHS (The Walton Centre Trust)</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text"><small class="text-muted">August 2022- August 2023</small></p>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Store Assistant @ Home Bargains</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text"><small class="text-muted">July 2019 - Present</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

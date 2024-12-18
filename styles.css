@@ -1,52 +1,70 @@
+.body{
+    color:aquamarine
+} 
+
+
+
+
+
+
+.aboutme {
+    position: absolute; 
+    top: 50%; 
+    left: 15%; 
+    transform: translateY(-50%); 
+    text-align: left; 
+    max-width: 400px;
+}
+
 
 .sidebar {
     position: fixed;
     top: 0;
     left: 0;
-    width: 150px; /* Adjust the width as needed */
-    height: 100%; /* Full height of the viewport */
-    background-color: black; /* Set the background to black */
-    color: white; /* Text color */
+    width: 150px; 
+    height: 100%; 
+    background-color: black; 
+    color: white; 
     display: flex;
     flex-direction: column;
-    align-items: center; /* Align items centrally in the sidebar */
-    padding-top: 20px; /* Add some space at the top */
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); /* Add subtle shadow for depth */
+    align-items: center; 
+    padding-top: 20px; 
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); 
 }
 
 
 .intro {
-    position: absolute; /* Allows precise positioning */
-    top: 50%; /* Centers vertically */
-    left: 15%; /* Adjusts it slightly away from the navbar */
-    transform: translateY(-50%); /* Ensures true vertical centering */
-    text-align: left; /* Aligns text to the left */
-    max-width: 400px; /* Restricts width for better visual balance */
+    position: absolute; 
+    top: 50%; 
+    left: 15%; 
+    transform: translateY(-50%); 
+    text-align: left; 
+    max-width: 400px; 
 }
 
 .intro h3 {
-    margin: 10px 0; /* Adds spacing between headings */
+    margin: 10px 0; 
 }
 
 .intro p {
-    margin-top: 15px; /* Space between paragraph and headings */
+    margin-top: 15px; 
 }
 
 .contactbutton {
-    display: inline-block; /* Makes button spacing consistent */
+    display: inline-block; 
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: #007bff; /* Bootstrap primary color */
+    background-color: #007bff; 
     color: white;
     text-decoration: none;
     border-radius: 5px;
 }
 
 .contactbutton:hover {
-    background-color: #0056b3; /* Darker hover effect */
+    background-color: #0056b3;
 }
 
-.onHover{
+.workexp{
     color:blue;
 }
 
@@ -60,3 +78,56 @@ li {
    margin-right: 8px;
    display:flex;
 }
+
+
+.workexp {
+    position: absolute;
+    top: 10%; 
+    left: 15%; 
+    transform: translateY(-50%); 
+    text-align: left; 
+    max-width: 400px; 
+}
+
+.card-body{
+        margin-bottom: 25px;
+}
+
+
+
+.worktabs {
+    position: absolute; 
+    top: 55%; 
+    left: 15%; 
+    transform: translateY(-50%); 
+    text-align: left; 
+    max-width: 400px; 
+}
+
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card-body {
+    opacity: 0; 
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+.card-body:nth-child(1) {
+    animation-delay: 0.4s;
+}
+.card-body:nth-child(2) {
+    animation-delay: 0.8s;
+}
+.card-body:nth-child(3) {
+    animation-delay: 0.12s;
+}
+
